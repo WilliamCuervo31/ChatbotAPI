@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans&family=Graduate&family=Press+Start+2P&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap');
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+    --primary-color: #3498db;
+    --secondary-color: #215984;
+}
+
+header {
+    display: grid;
+    place-content: center;
+    height: 10rem;
+    background-color: var(--primary-color);
+    font-size: 8rem;
+    border: 0.3rem solid black;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 22%;
+    gap: 0.5rem;
+    padding: 0.7rem;
+    padding-top: 4.5rem;
+    padding-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+.left {
+    height: 65vh;
+}
+
+.left-chat {
+    display: flex;
+    position: relative;
+    height: 92%;
+    min-height: 33rem;
+    border: 0.15rem solid black;
+    border-radius: 0.35rem;
+}
+
+.left-chat-iaImgContainer {
+    position: absolute;
+    top: -2.5rem;
+    left: -2.5rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    border: 0.18rem solid var(--primary-color);
+}
+
+.left-chat-iaImg {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.left-chat-messagesContainer {
+    margin: 1rem;
+    margin-left: 4.75rem;
+    margin-right: 2.95rem;
+    height: 93%;
+}
+
+.left-chat-messages {
+    list-style: none;
+    overflow-y: auto;
+    padding: 0 0.5rem;
+    height: 100%;
+}
+
+.left-chat-messages::-webkit-scrollbar, .left-write-input::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+.left-chat-messages::-webkit-scrollbar-thumb, .left-write-input::-webkit-scrollbar-thumb {
+    background-color: rgb(209, 209, 209);
+    border-radius: 20rem;
+}
+
+.left-chat-messages li {
+    width: 83%;
+    margin: 1.65rem 0;
+    padding: 1.05rem 1.5rem;
+    border-radius: 0.65rem;
+    line-height: 2rem;
+    font-size: 1.23rem;
+}
+
+.message-ia {
+    border: 0.15rem solid transparent;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.message-user {
+    position: relative;
+    left: 17%;
+    border: 0.15rem solid black;
+}
+
+.left-chat-microContainer {
+    position: absolute;
+    right: -2.75rem;
+    top: calc(50% - 2.75rem);
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+.left-chat-micro {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0;
+    font-size: 1.8rem;
+    transition: 500ms ease;
+    box-shadow: 0 0 1.5rem 0.4rem transparent;
+}
+
+.left-chat-micro:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 1.5rem 0.4rem var(--secondary-color);
+}
+
+.left-write {
+    display: flex;
+    align-items: end;
+    height: 3.2rem;
+}
+
+.form-write {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 92%;
+    border: 0.1rem solid rgb(166, 165, 165);
+    border-radius: 1rem;
+}
+
+.left-write-input {
+    height: 100%;
+    width: 100%;
+    padding-left: 0.7rem;
+    padding-top: 0.6rem;
+    resize: none;
+    font-size: 1.4rem;
+    border: 0 solid transparent;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.left-write-input::placeholder {
+    color: rgb(166, 165, 165);
+}
+
+.left-write-button {
+    margin: auto 0.5rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 0.4rem;
+    font-size: 1.15rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0;
+    transition: 350ms ease;
+}
+
+.left-write-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.right-title span {
+    display: flex;
+    justify-content: center;
+    font-size: 5.5rem;
+    font-family: 'Graduate', Arial;
+}
+
+.right-commandContainer {
+    display: flex;
+    align-items: end;
+    height: 3.2rem;
+}
+
+.right-command {
+    height: 90%;
+    width: 10rem;
+    font-size: 1.25rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0;
+    border-radius: 0.8rem;
+    transition: 280ms ease-in;
+}
+
+.right-command:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
