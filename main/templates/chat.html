@@ -12,6 +12,7 @@
         HEADER
     </header>
 
+    {% csrf_token %}
     <div class="main">
         <div class="left">
             <div class="left-chat">
@@ -29,11 +30,6 @@
                             <li class="message-user">
                                 <span>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sit!
-                                </span>
-                            </li>
-                            <li class="message-ia">
-                                <span>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde a nulla saepe sint ipsum optio illo aliquid debitis enim, ex, aspernatur reprehenderit, sunt nisi. Exercitationem delectus, excepturi beatae repudiandae cum dignissimos assumenda eum magni.
                                 </span>
                             </li>
                         </ul>
@@ -62,7 +58,7 @@
             </div>
 
             <div class="right-commandContainer">
-                <button class="right-command"><i class="fa-solid fa-terminal"></i> Comandos</button>
+                <button class="right-command"><i class="fa-solid fa-trash"></i> Borrar chat</button>
             </div>
         </div>
     </div>
