@@ -1,0 +1,64 @@
+.bg-custom{
+    background-color: rgb(40, 40, 158);
+    height: fit-content;
+}
+
+.img-domesa{
+    margin: 0.25rem;
+    padding: 0.15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.col-8{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .navbar-nav{
+    width: 80vw;
+}
+
+.nav-link, .active{
+    color: white;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    width: calc(8.2rem + 1.8vw);
+}
+
+.navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link:visited{
+    color: white;
+    border-bottom: 0.2rem solid white;
+
+}
+
+.navbar-nav .nav-link:hover{
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .col-8{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-domesa{
+        margin: 0.4rem;
+        padding: 0.15rem;
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        height: 8vh;
+    }
+
+    col-8{
+        display: flex;
+        float: left;
+    }
+}

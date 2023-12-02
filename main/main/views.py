@@ -42,3 +42,6 @@ def chat_message(request):
 
 def packages(request):
     return render(request, 'packages.html', {})
+
+def header(request):
+    return render(request, 'header.html', {})
