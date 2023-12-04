@@ -1,4 +1,5 @@
 import json
+import time
 from openai import OpenAI
 import speech_recognition as sr
 import pyttsx3
@@ -8,7 +9,7 @@ from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
 
 api_chat = OpenAI(
-    api_key = "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",
+    api_key = "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",
 )
 
 def index(request):

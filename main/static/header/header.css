@@ -4,7 +4,8 @@
 }
 
 .img-domesa{
-    margin: 0.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
     padding: 0.15rem;
     display: flex;
     justify-content: center;
@@ -27,7 +28,11 @@
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    width: calc(8.2rem + 1.8vw);
+    width: auto;
+}
+
+.row{
+    width: 100%;
 }
 
 .navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link:visited{

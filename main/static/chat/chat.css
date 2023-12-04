@@ -37,7 +37,7 @@ header {
 }
 
 .left-chat {
-    display: flex;
+    display: grid;
     position: relative;
     height: 92%;
     min-height: 33rem;
