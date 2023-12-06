@@ -61,6 +61,13 @@ function getCSRFToken() {
     return null;
 }
 
+function speak(text) {
+    var voices = speechSynthesis.getVoices();
+    var texto = new SpeechSynthesisUtterance(text);
+    texto.voice = voices[4];
+    speechSynthesis.speak(texto);
+}
+
 function sendJson(text) {
     let new_text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
@@ -77,6 +84,7 @@ function sendJson(text) {
     .then(data => {
         data
         sendMessage("message-ia", data.res);
+        speak(data.res);
     })
     .catch(error => {
         console.error('Error:', error);
