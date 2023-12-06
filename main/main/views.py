@@ -7,7 +7,7 @@ from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
 
 api_chat = OpenAI(
-    api_key = "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",
+    api_key = "",
 )
 
 def index(request):
