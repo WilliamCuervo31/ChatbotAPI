@@ -7,7 +7,7 @@ input::placeholder{
 }
 
 .f1{
-    display: none;
+    display: block;
 }
 
 .f2{
@@ -26,6 +26,31 @@ input::placeholder{
 
 .shadow-custom{
     box-shadow: 0.01rem 0.01rem 0.4rem 0.4rem #012bfc53;
+}
+
+.left-chat-microContainer {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.alert1{
+    display: none;
+}
+
+.left-chat-micro {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    border: 0;
+    font-size: 1.8rem;
+    transition: 500ms ease;
+    box-shadow: 0 0 1.5rem 0.4rem transparent;
 }
 
 .li{
