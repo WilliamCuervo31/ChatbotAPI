@@ -27,10 +27,11 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
+                        <a class="nav-link" href="{% url 'index' %}">Inicio</a>
                         <a class="nav-link" href="{% url 'chat' %}">Chat</a>
                         <a class="nav-link active" href="{% url 'packages' %}">Cotización envíos</a>
-                        <a class="nav-link" href="#">Servicios</a>
-                        <a class="nav-link" href="#">Perfil</a>
+                        <a class="nav-link" href="#" style="cursor: default;">Hola<br>{{ user.first_name }}</a>
+                        <a class="nav-link" href="{% url 'signout' %}">Cerrar sesión</a>
                     </div>
                   </div>
                 </div>
@@ -50,7 +51,7 @@
             <div class="col-12 w-80 mx-2">
                 <ul class="d-flex justify-content-center list-option">
                     <li class="mx-auto li py-2 px-1 fs-5" id="elemento1"><img src="{% static 'packages/imgs/document.png' %}" alt="" class="documentimg">Documentos</li>
-                    <li class="mx-auto li py-2 px-1 fs-5 " id="elemento2"><img src="{% static 'packages/imgs/paquete.png' %}" alt="" class="documentimg">Valores</li>
+                    <li class="mx-auto li py-2 px-1 fs-5 " id="elemento2"><img src="{% static 'packages/imgs/paquete.png' %}" alt="" class="documentimg">Paquetes</li>
                 </ul>
             </div>
         </div>

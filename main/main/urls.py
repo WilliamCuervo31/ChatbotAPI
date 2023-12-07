@@ -21,8 +21,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('signin/', views.signin, name='signin'),
+    path('register/', views.register, name='register'),
+    path('signout/', views.signout, name='signout'),
     path('chat/', views.chat, name='chat'),
-    path('chat/message/', views.chat_message, name='chat_message'),    
+    path('chat/message/', views.chat_message, name='chat_message'),
+    path('chat/message/delete/', views.chat_message_delete, name='chat_message_delete'),
     path('packages/', views.packages, name='packages'),
-    path('header/', views.header, name='header')
 ]

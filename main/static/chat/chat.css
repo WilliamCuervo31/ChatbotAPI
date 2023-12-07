@@ -9,8 +9,8 @@
 
 :root {
     font-size: 100%;
-    --primary-color: #3498db;
-    --secondary-color: #215984;
+    --primary-color: rgb(179, 179, 227);
+    --secondary-color: rgb(40, 40, 158);
 }
 
 .main {
@@ -124,8 +124,8 @@
 }
 
 .loader {
-    border: 0.5rem solid rgb(50, 50, 50);
-    border-top: 0.5rem solid #f3f3f3;
+    border: 0.5rem solid #f3f3f3;
+    border-top: 0.5rem solid #43b3ef;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;

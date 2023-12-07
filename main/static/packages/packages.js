@@ -161,16 +161,13 @@ function calc_doc(peso, e){
   }
 }
 
-function mostrarTotalEnContainer(total) {
+function mostrarTotalEnContainer(total, type) {
   const container = document.querySelector('.container');
   const totalElement = document.createElement('p');
-  totalElement.textContent = `Total: ${total}`;
+  totalElement.textContent = `Total ${type}: ${total}`;
   totalElement.classList.add('alert'); 
   totalElement.classList.add('alert-danger'); 
   
-  
-
-
   container.appendChild(totalElement);
   totalElement.style.display = "flex";
   totalElement.style.alignItems = "center";
@@ -207,14 +204,14 @@ document.addEventListener('DOMContentLoaded', function() {
     btnDoc.addEventListener('click', (e) => {
       total = calc_doc(peso.value, e);
       e.preventDefault();
-      mostrarTotalEnContainer(total);
+      mostrarTotalEnContainer(total, 'documento/s');
       e.preventDefault();
       
     })
 
     btnPac.addEventListener('click', (e) => {
       total2 = calc_val(peso2.value, e);
-      mostrarTotalEnContainer(total2);
+      mostrarTotalEnContainer(total2, 'paquete/s');
       e.preventDefault();
       
     })
